@@ -12,4 +12,13 @@ https://www.youtube.com/watch?v=A63UxsQsEbU&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8
 C:\react>npx create-next-app nextjs-tutorial
 
 
+Lecture notes:
 
+What is Next.js?
+Framework for creating pre-rendering React websites
+Offers us both Server Side Rendering & Static Site Generation (SSR) & (SSG)
+- Server-side rendering is when react components are rendered into html pages on the server after a page request comes from the browser
+- Static site generation is when components are rendered into html pages at build time so that we can just deploy the web pages and javascript bundles to the web
+Next.js allow us to easily do both of these things meaning that our react components are already rendered into html pages by the time
+they reach the browser
+In contract to this with Next, react renders components in the browser instead and this is known as client-side rendering
