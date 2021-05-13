@@ -14,7 +14,8 @@ C:\react\nextjs-tutorial>npm run dev
 
 http://localhost:3000
 http://localhost:3000/about
-
+http://localhost:3000/ninjas/test
+http://localhost:3000/ninjas
 ------------------
 
 Lecture notes:
