@@ -4,8 +4,8 @@ https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
 
 Up to:
-Next.js Tutorial #5 - Creating a Layout Component
-https://www.youtube.com/watch?v=DGn25s42NvQ&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=5
+Next.js Tutorial #6 - Adding Styles
+https://www.youtube.com/watch?v=qKwnlTVAGnA&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=6
 
 ====================================================================================================
 
