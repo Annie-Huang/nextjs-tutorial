@@ -4,8 +4,8 @@ https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
 
 Up to:
-Next.js Tutorial #4 - Linking Between Pages
-https://www.youtube.com/watch?v=u8vaAc3ivcY&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=4
+Next.js Tutorial #5 - Creating a Layout Component
+https://www.youtube.com/watch?v=DGn25s42NvQ&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=5
 
 ====================================================================================================
 
