@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque
         autem debitis dolor error eum fuga itaque minima sapiente vel.
       </p>
+      <Link href='/ninjas'>
+        <a>See Ninja Listing</a>
+      </Link>
       <Footer />
     </div>
   );
