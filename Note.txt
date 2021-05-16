@@ -7,8 +7,8 @@ https://jsonplaceholder.typicode.com/
 https://jsonplaceholder.typicode.com/users
 
 Up to:
-Next.js Tutorial #10 - Fetching Data (getStaticProps)
-https://www.youtube.com/watch?v=zueyEdRZQlk&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=10
+Next.js Tutorial #11 - Dynamic Routes (part 1)
+https://www.youtube.com/watch?v=WPdJaBFquNc&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=11
 
 CCS Module:
 - can encapsulate each file use their own style file.
@@ -29,6 +29,12 @@ http://localhost:3000/about
 http://localhost:3000/ninjas/test
 http://localhost:3000/ninjas
 http://localhost:3000/abd       << 404 page. \pages\404.js is the special file (have to use this name) you can create for link not exist..
+
+http://localhost:3000/ninjas/id
+http://localhost:3000/ninjas/1
+http://localhost:3000/ninjas/2
+http://localhost:3000/ninjas/25
+
 
 <Image> from 'next/image' can lazily loads the image.
 E.g. if your image is not in the current view point and you need to scroll down to see.
