@@ -14,6 +14,8 @@ CCS Module:
     .title a:hover,
     .title a:focus,
     .title a:active {..}
+- Can only use pure selectors, meaning must contain at least one local class or id. Cannot select element
+  (seriously? really??)
 ====================================================================================================
 
 C:\react>npx create-next-app nextjs-tutorial
