@@ -3,9 +3,12 @@ Next.js Tutorial for Beginners (https://www.youtube.com/playlist?list=PL4cUxeGkc
 https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
 
+https://jsonplaceholder.typicode.com/
+https://jsonplaceholder.typicode.com/users
+
 Up to:
-Next.js Tutorial #9 - Images & Metadata
-https://www.youtube.com/watch?v=rHncMH1CfCU&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=9
+Next.js Tutorial #10 - Fetching Data (getStaticProps)
+https://www.youtube.com/watch?v=zueyEdRZQlk&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=10
 
 CCS Module:
 - can encapsulate each file use their own style file.
@@ -30,6 +33,22 @@ http://localhost:3000/abd       << 404 page. \pages\404.js is the special file (
 <Image> from 'next/image' can lazily loads the image.
 E.g. if your image is not in the current view point and you need to scroll down to see.
 the image will only be loaded when it's in the view point (optimize loading speed).
+
+
+Next.js Tutorial #1 - Introduction & Setup
+Next.js Tutorial #2 - Pages & Routes
+Next.js Tutorial #3 - Adding Other Components
+Next.js Tutorial #4 - Linking Between Pages
+Next.js Tutorial #5 - Creating a Layout Component
+Next.js Tutorial #6 - Adding Styles
+Next.js Tutorial #7 - Custom 404 Page
+Next.js Tutorial #8 - Redirecting Users
+Next.js Tutorial #9 - Images & Metadata
+Next.js Tutorial #10 - Fetching Data (getStaticProps)
+Next.js Tutorial #11 - Dynamic Routes (part 1)
+Next.js Tutorial #12 - Dynamic Routes (part 2 - getStaticPaths)
+Next.js Tutorial #13 - Fetching a Single Item
+Next.js Tutorial #14 - Deploying to Vercel
 
 ------------------
 
