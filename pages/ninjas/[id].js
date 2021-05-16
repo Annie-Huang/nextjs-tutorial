@@ -24,20 +24,23 @@ export const getStaticPaths = async () => {
    that we automatically accept as an argument in this function so the id of each item we need to get is going to be attached
    to this context object so const id is equal to context.param.id
  */
-export const getStaticPaths = async (context) => {
+export const getStaticProps = async (context) => {
   const id = context.params.id;
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
   const data = await res.json();
 
   return {
-    props: { ninjas: data },
+    props: { ninja: data },
   };
 };
 
-const Details = () => {
+const Details = ({ ninja }) => {
   return (
     <div>
-      <h1>Details Page</h1>
+      <h1>{ninja.name}</h1>
+      <h1>{ninja.email}</h1>
+      <h1>{ninja.website}</h1>
+      <h1>{ninja.address.city}</h1>
     </div>
   );
 };

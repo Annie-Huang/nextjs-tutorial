@@ -72,7 +72,7 @@ In contract to this with Next, react renders components in the browser instead a
 ====================================================================================================
 
 
-getStaticPaths + getStaticPaths:
+getStaticPaths + getStaticProps:
 
 export const getStaticPaths = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/users');
