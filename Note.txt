@@ -1,4 +1,8 @@
 Next.js Tutorial for Beginners (https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
+Styling (CSS, Sass, CSS-in-JS) – Learn Next.js
+(- https://www.youtube.com/watch?v=2t6y-bDIe0Y&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR&index=6
+ - https://github.com/leerob/mastering-nextjs/tree/master/course/styling
+ - https://github.com/leerob/mastering-nextjs/tree/master/course/styling)
 
 https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
@@ -6,9 +10,13 @@ https://github.com/Annie-Huang/nextjs-tutorial
 https://jsonplaceholder.typicode.com/
 https://jsonplaceholder.typicode.com/users
 
+----------------
+
 Up to:
 Next.js Tutorial #13 - Fetching a Single Item
 https://www.youtube.com/watch?v=2zRHlqc0_yw&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=13
+
+====================================================================================================
 
 CCS Module:
 - can encapsulate each file use their own style file.
@@ -19,6 +27,69 @@ CCS Module:
     .title a:active {..}
 - Can only use pure selectors, meaning must contain at least one local class or id. Cannot select element
   (seriously? really??)
+
+Styling (CSS, Sass, CSS-in-JS) – Learn Next.js (https://www.youtube.com/watch?v=2t6y-bDIe0Y&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR&index=6)
+https://github.com/leerob/mastering-nextjs/tree/master/course/styling
+
+SCSS:
+- In next.config.js:
+  const withSass = require('@zeit/next-sass');
+  module.exports.withSass();
+
+styled-jsx:
+- This is invented by next.js team, only next.js use this styling method.
+  <style jsx>{`
+    .title{...}
+    .title:hover {...}
+  `}</style>
+
+styled-components
+- https://github.com/leerob/mastering-nextjs/tree/master/course/styling/04-styled-components
+- During the compilation process, style components takes care of Auto prefixing all of the vendor styles for this component.
+  e.g. display: flex --> display: -webkit-flex
+- The class in devtool will have filename+ElementName+hash
+.babelrc:
+{
+    "presets": ["next/babel"],
+    "plugins": [
+        "inline-react-svg",
+        [
+            "styled-components",
+            {
+                "displayName": true,
+                "preprocess": false,
+                "ssr": true
+            }
+        ]
+    ]
+}
+_document.js
+import Document from 'next/document';
+import {ServerStyleSheet} from 'styled-components';
+export default class MyDocument extends Document {
+    static async getInitialProps(ctx) {
+        const sheet = new ServerStyleSheet();
+        const originalRenderPage = ctx.renderPage;
+        try {
+            ctx.renderPage = () =>
+                originalRenderPage({
+                    enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />)
+                });
+            const initialProps = await Document.getInitialProps(ctx);
+            return {
+                ...initialProps,
+                styles: (
+                    <>
+                        {initialProps.styles}
+                        {sheet.getStyleElement()}
+                    </>
+                )
+            };
+        } finally {
+            sheet.seal();
+        }
+    }
+}
 ====================================================================================================
 
 C:\react>npx create-next-app nextjs-tutorial
