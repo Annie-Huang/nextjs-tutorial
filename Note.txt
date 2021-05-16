@@ -4,8 +4,8 @@ https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
 
 Up to:
-Next.js Tutorial #8 - Redirecting Users
-https://www.youtube.com/watch?v=O3yKwz4wRHc&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=8
+Next.js Tutorial #9 - Images & Metadata
+https://www.youtube.com/watch?v=rHncMH1CfCU&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=9
 
 CCS Module:
 - can encapsulate each file use their own style file.
@@ -26,6 +26,10 @@ http://localhost:3000/about
 http://localhost:3000/ninjas/test
 http://localhost:3000/ninjas
 http://localhost:3000/abd       << 404 page. \pages\404.js is the special file (have to use this name) you can create for link not exist..
+
+<Image> from 'next/image' can lazily loads the image.
+E.g. if your image is not in the current view point and you need to scroll down to see.
+the image will only be loaded when it's in the view point (optimize loading speed).
 
 ------------------
 
