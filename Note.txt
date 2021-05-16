@@ -4,8 +4,8 @@ https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
 
 Up to:
-Next.js Tutorial #6 - Adding Styles
-https://www.youtube.com/watch?v=qKwnlTVAGnA&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=6
+Next.js Tutorial #7 - Custom 404 Page
+https://www.youtube.com/watch?v=dlee0ESZvlc&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=7
 
 CCS Module:
 - can encapsulate each file use their own style file.
@@ -25,6 +25,8 @@ http://localhost:3000
 http://localhost:3000/about
 http://localhost:3000/ninjas/test
 http://localhost:3000/ninjas
+http://localhost:3000/abd       << 404 page. \pages\404.js is the special file (have to use this name) you can create for link not exist..
+
 ------------------
 
 Lecture notes:
