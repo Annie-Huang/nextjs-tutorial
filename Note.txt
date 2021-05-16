@@ -7,6 +7,13 @@ Up to:
 Next.js Tutorial #6 - Adding Styles
 https://www.youtube.com/watch?v=qKwnlTVAGnA&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=6
 
+CCS Module:
+- can encapsulate each file use their own style file.
+- devtool can see file name and class name under 'class' tag
+- Cannot do nesting, need to write css style, e.g.
+    .title a:hover,
+    .title a:focus,
+    .title a:active {..}
 ====================================================================================================
 
 C:\react>npx create-next-app nextjs-tutorial
