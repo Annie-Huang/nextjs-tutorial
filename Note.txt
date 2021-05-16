@@ -7,8 +7,8 @@ https://jsonplaceholder.typicode.com/
 https://jsonplaceholder.typicode.com/users
 
 Up to:
-Next.js Tutorial #11 - Dynamic Routes (part 1)
-https://www.youtube.com/watch?v=WPdJaBFquNc&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=11
+Next.js Tutorial #12 - Dynamic Routes (part 2 - getStaticPaths)
+https://www.youtube.com/watch?v=mAHqpdVzJmA&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=12
 
 CCS Module:
 - can encapsulate each file use their own style file.
