@@ -24,6 +24,9 @@ CCS Module:
 C:\react>npx create-next-app nextjs-tutorial
 C:\react\nextjs-tutorial>npm run dev
 
+C:\react\nextjs-tutorial>npm run build
+    << Open up C:\react\nextjs-tutorial\.next\server\pages\ninjas\ folder and you can see all the 1-10.html files are there
+
 http://localhost:3000
 http://localhost:3000/about
 http://localhost:3000/ninjas/test
