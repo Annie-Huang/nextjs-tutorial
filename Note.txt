@@ -12,6 +12,12 @@ State Management & More (Redux, React Context, TypeScript) – Learn Next.js
 Typescript:
 (- https://nextjs.org/docs/basic-features/typescript
  - https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
+Redirect:
+(- https://nextjs.org/docs/api-reference/next.config.js/redirects)
+ReWrite:
+(- https://nextjs.org/docs/api-reference/next.config.js/rewrites)
+Absolute Imports and Module path aliases:
+(- https://nextjs.org/docs/advanced-features/module-path-aliases)
 
 https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
@@ -135,6 +141,21 @@ typescript:
 - next-env.d.ts file were to ensure the next.js are picked up by the typescript file. Don't delete this file. Just leave it
   and it will allow ou to have access next.js specific types
 
+====================================================================================================
+
+Absolute Imports and Module path aliases:
+// tsconfig.json or jsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"]
+    }
+  }
+}
+
+// pages/index.js
+import Button from '@/components/button'
 
 ====================================================================================================
 
