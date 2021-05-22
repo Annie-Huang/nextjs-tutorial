@@ -3,6 +3,15 @@ Styling (CSS, Sass, CSS-in-JS) – Learn Next.js
 (- https://www.youtube.com/watch?v=2t6y-bDIe0Y&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR&index=6
  - https://github.com/leerob/mastering-nextjs/tree/master/course/styling
  - https://github.com/leerob/mastering-nextjs/tree/master/course/styling)
+State Management & More (Redux, React Context, TypeScript) – Learn Next.js
+(- https://www.youtube.com/watch?v=MR43-gYVQbI&list=PL6bwFJ82M6FXjyBTVi6WSCWin8q_g_8RR&index=12
+ - https://github.com/vercel/next.js/blob/canary/examples/with-redux/store.js
+ - https://github.com/vercel/next.js/blob/canary/examples/with-context-api/pages/about.js
+ - https://github.com/vercel/next.js/blob/canary/examples/with-context-api/components/Counter.js
+ - https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
+Typescript:
+(- https://nextjs.org/docs/basic-features/typescript
+ - https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
 
 https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-1
 https://github.com/Annie-Huang/nextjs-tutorial
@@ -90,6 +99,43 @@ export default class MyDocument extends Document {
         }
     }
 }
+====================================================================================================
+
+redux:
+- https://github.com/vercel/next.js/blob/canary/examples/with-redux/store.js
+- Store with initial state ops your application out of using static pre-rendering.
+  e.g. if two of your pages use redux and maybe five others are marketing pages and they don't need to,
+  they're effectively not going to be able to compile down to a static site and that's not great and we want
+  to get around it. The new way to use Redux with Next is:
+  - export default withRedux(IndexPage)     << use redux. Use in page level, but don't use it in component level and don't use it in _app.js.
+  - Need functionality rendering out to a static site: Dispatched in client side and get your own componentDidMount instead of getInitialProps
+- Has some very nice dev tools that can do a lot of really robust functionality.
+  - You can trace your state updates.
+  - You can have a bunch of pre baked middleware just pull off the shell from NPM that allows you to add more logic on top of your state management solution.
+  - Cannot do it as easily with react context
+- Overall recommendation is not to use redux.
+
+react context API:
+- https://github.com/vercel/next.js/blob/canary/examples/with-context-api/pages/about.js
+  https://github.com/vercel/next.js/blob/canary/examples/with-context-api/components/Counter.js
+- You can wrap specific components with a context provider and you don't have to do it at a page level like you do with the withRedux higher-order component.
+- Can do with page component or component component.
+- React context, the useContext hook, the useReducer hook, and changing your model about how you build these applications and share
+  state will probably work fro most people up to a point and when you get to that point then it might be worth evaluating whether
+  you need to use a more robust library like redux
+
+====================================================================================================
+
+typescript:
+- https://nextjs.org/docs/basic-features/typescript
+  https://github.com/vercel/next.js/tree/canary/examples/with-typescript
+- package.json: add:
+  - "typescript": "4.0" | "@types/react": "^17.0.2",
+- Then when you run the app for the first time, the create-next-app will automatically create tsconfig.json
+- next-env.d.ts file were to ensure the next.js are picked up by the typescript file. Don't delete this file. Just leave it
+  and it will allow ou to have access next.js specific types
+
+
 ====================================================================================================
 
 C:\react>npx create-next-app nextjs-tutorial
