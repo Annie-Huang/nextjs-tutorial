@@ -35,7 +35,7 @@ https://www.youtube.com/watch?v=2zRHlqc0_yw&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8
 
 CCS Module:
 - can encapsulate each file use their own style file.
-- devtool can see file name and class name under 'class' tag
+- devtool can see file name and class name under 'class' tag. e.g. <div class="layout_container__2t4v2"> where layout is the file name, container is the classname
 - Cannot do nesting, need to write css style, e.g.
     .title a:hover,
     .title a:focus,
