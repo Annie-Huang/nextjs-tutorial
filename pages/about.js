@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import AboutFooterBanner from '../components/AboutFooterBanner';
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque
           autem debitis dolor error eum fuga itaque minima sapiente vel.
         </p>
+        <AboutFooterBanner backgroundColor="yellow"/>
       </div>
     </>
   );
