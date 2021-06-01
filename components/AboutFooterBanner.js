@@ -24,6 +24,7 @@ const AboutFooterBanner = (props) => {
       annieannie
       {/*{localStyle(props.backgroundColor)}*/}
 
+
       <style jsx>{`
         div {
           height: 20px;
